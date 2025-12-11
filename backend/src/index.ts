@@ -163,9 +163,8 @@ const users: UserType[] = [
     description: "Making people smile with confidence.",
     profession: "Dentist",
     rating: 4.7,
-  }
+  },
 ];
-
 
 const app = express();
 const port = 3000;
@@ -177,9 +176,9 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to welcome page" });
 });
 
-app.get("/users", (req,res) => {
-    res.json(users)
-})
+app.get("/users", (req, res) => {
+  res.json(users);
+});
 
 app.listen(port, () => {
   console.log(`server is listening on the port ${port}`);
