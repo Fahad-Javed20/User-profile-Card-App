@@ -6,7 +6,7 @@ import type { UserType } from "./types/UserType";
 const users: UserType[] = [
   {
     id: 1,
-    image: "https://source.unsplash.com/random/?portrait,man",
+    image: "https://source.unsplash.com/300x300/?portrait,man",
     name: "Aiden Walker",
     description: "Creative thinker who loves solving complex problems.",
     profession: "UI/UX Designer",
@@ -14,7 +14,7 @@ const users: UserType[] = [
   },
   {
     id: 2,
-    image: "https://source.unsplash.com/random/?portrait,woman",
+    image: "https://source.unsplash.com/300x300/?portrait,woman",
     name: "Sophia Martinez",
     description: "Passionate about helping brands grow.",
     profession: "Digital Marketer",
@@ -22,7 +22,7 @@ const users: UserType[] = [
   },
   {
     id: 3,
-    image: "https://source.unsplash.com/random/?portrait,developer",
+    image: "https://source.unsplash.com/300x300/?portrait,developer",
     name: "Ethan Williams",
     description: "Full-stack developer with 5+ years of experience.",
     profession: "Software Engineer",
@@ -30,7 +30,7 @@ const users: UserType[] = [
   },
   {
     id: 4,
-    image: "https://source.unsplash.com/random/?portrait,photographer",
+    image: "https://source.unsplash.com/300x300/?portrait,photographer",
     name: "Mia Johnson",
     description: "Capturing moments through creative storytelling.",
     profession: "Photographer",
@@ -38,7 +38,7 @@ const users: UserType[] = [
   },
   {
     id: 5,
-    image: "https://source.unsplash.com/random/?portrait,chef",
+    image: "https://source.unsplash.com/300x300/?portrait,chef",
     name: "Noah Brown",
     description: "Loves experimenting with world cuisines.",
     profession: "Chef",
@@ -46,7 +46,7 @@ const users: UserType[] = [
   },
   {
     id: 6,
-    image: "https://source.unsplash.com/random/?portrait,teacher",
+    image: "https://source.unsplash.com/300x300/?portrait,teacher",
     name: "Olivia Davis",
     description: "Helping students achieve academic success.",
     profession: "Teacher",
@@ -54,7 +54,7 @@ const users: UserType[] = [
   },
   {
     id: 7,
-    image: "https://source.unsplash.com/random/?portrait,artist",
+    image: "https://source.unsplash.com/300x300/?portrait,artist",
     name: "Liam Miller",
     description: "Creating expressive illustrations and designs.",
     profession: "Artist",
@@ -62,7 +62,7 @@ const users: UserType[] = [
   },
   {
     id: 8,
-    image: "https://source.unsplash.com/random/?portrait,doctor",
+    image: "https://source.unsplash.com/300x300/?portrait,doctor",
     name: "Emma Wilson",
     description: "Dedicated to improving patient wellbeing.",
     profession: "Doctor",
@@ -70,7 +70,7 @@ const users: UserType[] = [
   },
   {
     id: 9,
-    image: "https://source.unsplash.com/random/?portrait,engineer",
+    image: "https://source.unsplash.com/300x300/?portrait,engineer",
     name: "James Anderson",
     description: "Engineering innovative solutions for modern challenges.",
     profession: "Mechanical Engineer",
@@ -78,7 +78,7 @@ const users: UserType[] = [
   },
   {
     id: 10,
-    image: "https://source.unsplash.com/random/?portrait,writer",
+    image: "https://source.unsplash.com/300x300/?portrait,writer",
     name: "Ava Thomas",
     description: "Writer who loves crafting compelling stories.",
     profession: "Content Writer",
@@ -86,7 +86,7 @@ const users: UserType[] = [
   },
   {
     id: 11,
-    image: "https://source.unsplash.com/random/?portrait,musician",
+    image: "https://source.unsplash.com/300x300/?portrait,musician",
     name: "Benjamin Moore",
     description: "Creates music that inspires and uplifts.",
     profession: "Musician",
@@ -94,7 +94,7 @@ const users: UserType[] = [
   },
   {
     id: 12,
-    image: "https://source.unsplash.com/random/?portrait,trainer",
+    image: "https://source.unsplash.com/300x300/?portrait,trainer",
     name: "Isabella Clark",
     description: "Helping people achieve fitness goals.",
     profession: "Fitness Trainer",
@@ -102,7 +102,7 @@ const users: UserType[] = [
   },
   {
     id: 13,
-    image: "https://source.unsplash.com/random/?portrait,scientist",
+    image: "https://source.unsplash.com/300x300/?portrait,scientist",
     name: "Lucas Rodriguez",
     description: "Researching innovative scientific breakthroughs.",
     profession: "Scientist",
@@ -110,7 +110,7 @@ const users: UserType[] = [
   },
   {
     id: 14,
-    image: "https://source.unsplash.com/random/?portrait,student",
+    image: "https://source.unsplash.com/300x300/?portrait,student",
     name: "Harper Lewis",
     description: "Curious learner with a passion for tech.",
     profession: "Student",
@@ -118,7 +118,7 @@ const users: UserType[] = [
   },
   {
     id: 15,
-    image: "https://source.unsplash.com/random/?portrait,model",
+    image: "https://source.unsplash.com/300x300/?portrait,model",
     name: "Henry Walker",
     description: "Fashion model with a unique style.",
     profession: "Model",
@@ -126,7 +126,7 @@ const users: UserType[] = [
   },
   {
     id: 16,
-    image: "https://source.unsplash.com/random/?portrait,developer,woman",
+    image: "https://source.unsplash.com/300x300/?portrait,developer,woman",
     name: "Grace Young",
     description: "Frontend developer crafting clean user interfaces.",
     profession: "Frontend Developer",
@@ -134,7 +134,7 @@ const users: UserType[] = [
   },
   {
     id: 17,
-    image: "https://source.unsplash.com/random/?portrait,businessman",
+    image: "https://source.unsplash.com/300x300/?portrait,businessman",
     name: "Daniel King",
     description: "Entrepreneur building scalable startups.",
     profession: "Business Owner",
@@ -142,7 +142,7 @@ const users: UserType[] = [
   },
   {
     id: 18,
-    image: "https://source.unsplash.com/random/?portrait,lawyer",
+    image: "https://source.unsplash.com/300x300/?portrait,lawyer",
     name: "Chloe Scott",
     description: "Committed to delivering justice and fairness.",
     profession: "Lawyer",
@@ -150,7 +150,7 @@ const users: UserType[] = [
   },
   {
     id: 19,
-    image: "https://source.unsplash.com/random/?portrait,designer,man",
+    image: "https://source.unsplash.com/300x300/?portrait,designer,man",
     name: "Matthew Green",
     description: "Designing minimalistic and clean experiences.",
     profession: "Product Designer",
@@ -158,13 +158,14 @@ const users: UserType[] = [
   },
   {
     id: 20,
-    image: "https://source.unsplash.com/random/?portrait,dentist",
+    image: "https://source.unsplash.com/300x300/?portrait,dentist",
     name: "Ella Harris",
     description: "Making people smile with confidence.",
     profession: "Dentist",
     rating: 4.7,
   },
 ];
+
 
 const app = express();
 const port = 3000;

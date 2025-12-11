@@ -1,13 +1,22 @@
 import { useForm } from "react-hook-form";
 import type { UserType } from "../types/UserType";
 
-const UserForm = () => {
+interface UserFormProps {
+  onAddUser: (user: UserType) => void;
+}
+
+const UserForm = ({ onAddUser }: UserFormProps) => {
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
   } = useForm<UserType>();
+
+  const onSubmit = (user: UserType) => {
+    onAddUser(user);
+    reset();
+  };
   return (
     <div className="flex flex-col gap-6 items-center mt-6">
       <div>
@@ -15,7 +24,10 @@ const UserForm = () => {
           User Data Form
         </h1>
       </div>
-      <form className="bg-gray-200 p-6 min-w-md rounded-2xl">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="bg-gray-200 p-6 min-w-md rounded-2xl flex flex-col gap-4"
+      >
         <div>
           <label className="text-left font-semibold block mb-2" htmlFor="name">
             Name
@@ -24,10 +36,68 @@ const UserForm = () => {
             type="text"
             id="name"
             placeholder="Enter Name"
-            className="px-2 py-2 rounded-lg w-full border-2 border-gray-300 
-             focus:border-amber-700 focus:ring-2 focus:ring-amber-700 focus:outline-none"
+            className="px-2 shadow-2xl py-2 rounded-lg w-full border border-gray-300 
+             focus:border-amber-700 focus:ring-1 focus:ring-amber-700 focus:outline-none"
             {...register("name", { required: true })}
           />
+          {errors.name && <p className="bg-red-500">This field is Mandatory</p>}
+        </div>
+
+        <div>
+          <label className="text-left font-semibold block mb-2" htmlFor="image">
+            Image URL
+          </label>
+          <input
+            type="text"
+            id="image"
+            placeholder="Enter Image URL"
+            className="px-2 shadow-2xl py-2 rounded-lg w-full border border-gray-300 
+             focus:border-amber-700 focus:ring-1 focus:ring-amber-700 focus:outline-none"
+            {...register("image", { required: true })}
+          />
+          {errors.image && (
+            <p className="bg-red-500">This field is Mandatory</p>
+          )}
+        </div>
+
+        <div>
+          <label
+            className="text-left font-semibold block mb-2"
+            htmlFor="profession"
+          >
+            Profession
+          </label>
+          <input
+            type="text"
+            id="profession"
+            placeholder="Enter Profession"
+            className="px-2 shadow-2xl py-2 rounded-lg w-full border border-gray-300 
+             focus:border-amber-700 focus:ring-1 focus:ring-amber-700 focus:outline-none"
+            {...register("profession", { required: true })}
+          />
+          {errors.profession && (
+            <p className="bg-red-500">This field is Mandatory</p>
+          )}
+        </div>
+
+        <div>
+          <label
+            className="text-left font-semibold block mb-2"
+            htmlFor="description"
+          >
+            Description
+          </label>
+          <input
+            type="text"
+            id="description"
+            placeholder="Enter Description"
+            className="px-2 shadow-2xl py-2 rounded-lg w-full border border-gray-300 
+             focus:border-amber-700 focus:ring-1 focus:ring-amber-700 focus:outline-none"
+            {...register("description", { required: true })}
+          />
+          {errors.description && (
+            <p className="bg-red-500">This field is Mandatory</p>
+          )}
         </div>
       </form>
     </div>
